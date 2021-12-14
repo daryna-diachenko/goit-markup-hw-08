@@ -1,13 +1,13 @@
 .features {
-  display: flex;
+  // display: flex;
 }
 
 .features__item {
-  position: relative;
+  // position: relative;
 
-  &:not(:last-child) {
-    margin-right: $card-gap;
-  }
+  // &:not(:last-child) {
+  //   margin-right: $card-gap;
+  // }
 }
 
 .features__thumb {
@@ -21,6 +21,7 @@
 .features__title {
   @extend %title;
   margin-bottom: 10px;
+  text-align: center;
   text-transform: uppercase;
 }
 

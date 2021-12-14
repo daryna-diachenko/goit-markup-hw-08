@@ -1,5 +1,7 @@
 .filter {
-  @include centered-flex();
+  display: flex;
+  flex-wrap: wrap;
+  // @include centered-flex();
   margin-bottom: 50px;
 }
 

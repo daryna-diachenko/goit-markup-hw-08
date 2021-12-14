@@ -3,12 +3,12 @@
   padding-bottom: 60px;
   background-color: $footer-bg-color;
 }
-.footer__container {
-  @include centered-flex($align: baseline);
-}
+// .footer__container {
+//   @include centered-flex($align: baseline);
+// }
 
 .footer__contacts {
-  margin-right: 70px;
+  // margin-right: 70px;
   color: $primary-bg-white-color;
 }
 
@@ -39,9 +39,9 @@
   }
 }
 
-.footer__social {
-  margin-right: auto;
-}
+// .footer__social {
+//   margin-right: auto;
+// }
 
 .footer__text {
   margin-bottom: 20px;

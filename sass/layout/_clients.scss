@@ -1,11 +1,24 @@
 .clients {
   display: flex;
+  flex-wrap: wrap;
   margin-right: calc(-1 * #{$card-gap});
+  margin-bottom: calc(-1 * #{$card-gap});
 }
 
 .clients__item {
+  flex-basis: calc(100% / 2 - #{$card-gap});
   margin-right: $card-gap;
+  margin-bottom: $card-gap;
 }
+
+// .clients {
+//   display: flex;
+//   margin-right: calc(-1 * #{$card-gap});
+// }
+
+// .clients__item {
+//   margin-right: $card-gap;
+// }
 
 .clients__link {
   @include centered-flex();

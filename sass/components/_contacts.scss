@@ -1,19 +1,18 @@
 .contacts {
-  display: flex;
-  margin-left: auto;
+  // display: flex;
+  // margin-left: auto;
 }
 
 .contacts__item {
-  @include centered-flex();
+  // @include centered-flex();
 
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
+  // &:not(:last-child) {
+  //   margin-right: 50px;
 }
 
 .contacts__link {
   @extend %link;
-  @include centered-flex();
+  // @include centered-flex();
 
   padding-top: 32px;
   padding-bottom: 32px;

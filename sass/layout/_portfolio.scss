@@ -1,13 +1,13 @@
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-right: calc(-1 * #{$card-gap});
-  margin-bottom: calc(-1 * #{$card-gap});
+  // margin-right: calc(-1 * #{$card-gap});
+  // margin-bottom: calc(-1 * #{$card-gap});
 }
 
 .card-set__item {
-  flex-basis: calc(100% / 3 - #{$card-gap});
-  margin-right: $card-gap;
+  //   flex-basis: calc(100% / 3 - #{$card-gap});
+  //   margin-right: $card-gap;
   margin-bottom: $card-gap;
 }
 
