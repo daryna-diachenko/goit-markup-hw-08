@@ -1,2 +1,2 @@
-# goit-markup-hw-0
+# goit-markup-hw-08
 Repository for responsive web design
