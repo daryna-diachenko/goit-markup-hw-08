@@ -1,0 +1,29 @@
+.clients {
+  display: flex;
+  margin-right: calc(-1 * #{$card-gap});
+}
+
+.clients__item {
+  margin-right: $card-gap;
+}
+
+.clients__link {
+  @include centered-flex();
+  width: 170px;
+  height: 92px;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+
+  color: $border-color;
+  transition: color $timing $function, border-color $timing $function;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}

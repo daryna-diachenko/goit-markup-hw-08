@@ -1,0 +1,29 @@
+.features {
+  display: flex;
+}
+
+.features__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: $card-gap;
+  }
+}
+
+.features__thumb {
+  @include centered-flex();
+  min-height: 120px;
+  margin-bottom: $card-gap;
+  border-radius: 4px;
+  background-color: $secondary-bg-color;
+}
+
+.features__title {
+  @extend %title;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.features__text {
+  line-height: 1.71;
+}

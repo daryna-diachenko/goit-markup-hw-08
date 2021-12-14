@@ -1,0 +1,14 @@
+.logo {
+  @extend %link;
+  font-family: $font-family-logo;
+  @include font($bold, 26px, 1.2, null);
+  color: $accent-color;
+}
+
+.logo--color-dark {
+  color: $nav-text-color;
+}
+
+.logo--color-light {
+  color: $primary-bg-white-color;
+}
