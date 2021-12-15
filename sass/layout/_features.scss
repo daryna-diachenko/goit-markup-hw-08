@@ -3,6 +3,10 @@
 }
 
 .features__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   // position: relative;
 
   // &:not(:last-child) {
@@ -21,6 +25,7 @@
 .features__title {
   @extend %title;
   margin-bottom: 10px;
+  font-size: 14px;
   text-align: center;
   text-transform: uppercase;
 }

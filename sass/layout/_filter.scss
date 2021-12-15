@@ -1,8 +1,12 @@
 .filter {
   display: flex;
   flex-wrap: wrap;
-  // @include centered-flex();
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $large) {
+    @include centered-flex();
+    margin-bottom: 50px;
+  }
 }
 
 .filter__item {
@@ -14,6 +18,7 @@
 .filter__btn {
   min-width: 73px;
   height: 38px;
+  margin-bottom: 15px;
   border: none;
   border-radius: 4px;
   padding: 6px 22px;

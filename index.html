@@ -20,55 +20,81 @@
       <div class="container page-header__container">
         <!------------------------- Навигация --------------------->
 
-        <nav class="site-nav">
-          <a class="logo" href="./index.html" lang="en"
+        <nav class="site-nav menu">
+          <a class="logo logo--header" href="./index.html" lang="en"
             >Web<span class="logo--color-dark">Studio</span></a
           >
 
-          <ul class="site-nav__list">
-            <li class="site-nav__item">
-              <a
-                class="site-nav__link site-nav__link--current"
-                href="./index.html"
-                >Студия</a
+          <button
+            class="menu__toggle js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="menu__icon"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <div class="menu__container js-menu-container" id="mobile-menu">
+            <button class="menu__toggle js-close-menu">
+              <svg
+                class="menu__icon"
+                width="40"
+                height="40"
+                aria-label="Переключатель мобильного меню"
               >
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="#footer">Контакты</a>
-            </li>
-          </ul>
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+
+            <ul class="site-nav__list">
+              <li class="site-nav__item">
+                <a
+                  class="site-nav__link site-nav__link--current"
+                  href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#footer">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="contacts">
+              <li class="contacts__item">
+                <a class="contacts__link" href="mailto:info@devstudio.com">
+                  <svg class="contacts__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+
+              <li class="contacts__item">
+                <a class="contacts__link" href="tel:+380961111111">
+                  <svg class="contacts__icon" width="10" height="16">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
-
-        <!--------------------------- Контакты ---------------------->
-
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a class="contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-
-          <li class="contacts__item">
-            <a class="contacts__link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
 
     <main>
       <!--------------------------- Герой --------------------------->
-
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -651,6 +677,12 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,10 +1,10 @@
 .hero {
   max-width: 1600px;
-  // min-height: 600px;
   min-height: 400px;
   margin-left: auto;
   margin-right: auto;
-  // padding: 200px 0;
+  padding: 118px 0;
+
   text-align: center;
 
   background-color: $footer-bg-color;
@@ -17,18 +17,29 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media screen and (min-width: $large) {
+    min-height: 600px;
+    padding: 200px 0;
+  }
 }
 
 .hero__title {
-  // width: 696px;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
 
-  @include font($extra-bold, 44px, 1.36, 0.06em);
+  @include font($extra-bold, 26px, 1.62, 0.06em);
+
   text-align: center;
   text-transform: uppercase;
   color: $primary-bg-white-color;
+
+  @media screen and (min-width: $large) {
+    width: 696px;
+    @include font($extra-bold, 44px, 1.36, 0.06em);
+  }
 }
 
 .hero__btn {

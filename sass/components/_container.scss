@@ -1,18 +1,17 @@
 .container {
-  // width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 
-  @include respond-at($small-device) {
+  @media screen and (min-width: $small) {
     width: 480px;
   }
 
-  @include respond-at($medium-device) {
+  @media screen and (min-width: $medium) {
     width: 768px;
   }
 
-  @include respond-at($large-device) {
+  @media screen and (min-width: $large) {
     width: 1200px;
   }
 }

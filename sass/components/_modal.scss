@@ -4,6 +4,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  padding: 93px 15px;
+  overflow-y: scroll;
 
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity $timing $function, visibility $timing $function;
@@ -24,14 +26,17 @@
 
   width: 450px;
   min-height: 609px;
-  // width: 528px;
-  // min-height: 581px;
   padding: 40px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: $primary-bg-white-color;
+
+  @media screen and (min-width: $large) {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -67,8 +72,12 @@
   @extend %title;
   margin-bottom: 12px;
 
-  @include font(null, 20px, 1.15, null);
+  @include font(null, 20px, 1.5, null);
   text-align: center;
+
+  @media screen and (min-width: $large) {
+    @include font(null, null, 1.15, null);
+  }
 }
 
 .form {
@@ -179,8 +188,12 @@
 }
 
 .form__text {
-  line-height: 1.71;
+  @include font(null, 12px, 1.17, null);
   color: $primary-text-color;
+
+  @media screen and (min-width: $large) {
+    @include font(null, 14px, 1.71, null);
+  }
 }
 
 .form__link {

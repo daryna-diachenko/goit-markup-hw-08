@@ -1,14 +1,17 @@
 .clients {
   display: flex;
   flex-wrap: wrap;
-  margin-right: calc(-1 * #{$card-gap});
-  margin-bottom: calc(-1 * #{$card-gap});
+  margin: -15px;
+  // margin-right: calc(-1 * #{$card-gap});
+  // margin-bottom: calc(-1 * #{$card-gap});
 }
 
 .clients__item {
-  flex-basis: calc(100% / 2 - #{$card-gap});
-  margin-right: $card-gap;
-  margin-bottom: $card-gap;
+  flex-basis: calc((100% - 2 * #{$card-gap}) / 2);
+  margin: 15px;
+  // flex-basis: calc(100% / 2 - #{$card-gap});
+  // margin-right: $card-gap;
+  // margin-bottom: $card-gap;
 }
 
 // .clients {
@@ -22,7 +25,8 @@
 
 .clients__link {
   @include centered-flex();
-  width: 170px;
+  width: 210px;
+
   height: 92px;
   border: 1px solid $border-color;
   border-radius: 4px;
@@ -34,6 +38,10 @@
   &:focus {
     border-color: $accent-color;
     color: $accent-color;
+  }
+
+  @media screen and (min-width: $large) {
+    width: 170px;
   }
 }
 

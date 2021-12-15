@@ -21,9 +21,3 @@
   line-height: $lh;
   letter-spacing: $ls;
 }
-
-@mixin respond-at($media) {
-  @media screen and (min-width: $media) {
-    @content;
-  }
-}

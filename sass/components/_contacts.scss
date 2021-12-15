@@ -30,4 +30,8 @@
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
+
+  @media screen and (max-width: 479px) {
+    display: none;
+  }
 }

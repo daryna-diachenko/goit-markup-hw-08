@@ -1,5 +1,7 @@
 .service {
-  display: flex;
+  @media screen and (min-width: $large) {
+    display: flex;
+  }
 }
 
 .service__item {
