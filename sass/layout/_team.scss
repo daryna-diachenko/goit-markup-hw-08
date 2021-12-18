@@ -1,5 +1,5 @@
 .team {
-  @media screen and (min-width: $large) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
@@ -13,7 +13,7 @@
   &:not(:last-child) {
     margin-bottom: 30px;
 
-    @media screen and (min-width: $large) {
+    @media screen and (min-width: 1200px) {
       margin-right: $card-gap;
     }
   }
@@ -23,7 +23,7 @@
   padding-top: $card-gap;
   padding-bottom: 24px;
 
-  @media screen and (min-width: $large) {
+  @media screen and (min-width: 1200px) {
     padding-bottom: $card-gap;
   }
 }
@@ -31,7 +31,7 @@
 .team__title {
   margin-bottom: 10px;
 
-  @include font($semibold, 16px, 1.19, null);
+  @include font($semibold, 16px, 1.19);
   text-align: center;
   color: $secondary-text-color;
 }
@@ -39,6 +39,6 @@
 .team__description {
   margin-bottom: 16px;
 
-  @include font(null, 16px, 1.19, null);
+  @include font(null, 16px, 1.19);
   text-align: center;
 }

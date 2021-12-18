@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   margin-bottom: 40px;
 
-  @media screen and (min-width: $large) {
+  @media screen and (min-width: 1200px) {
     @include centered-flex();
     margin-bottom: 50px;
   }
@@ -23,7 +23,7 @@
   border-radius: 4px;
   padding: 6px 22px;
 
-  @include font($semibold, 16px, 1.62, null);
+  @include font($semibold, 16px, 1.62);
   color: $secondary-text-color;
   background-color: $secondary-bg-color;
   transition: box-shadow $timing $function, color $timing $function,

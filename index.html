@@ -20,19 +20,19 @@
       <div class="container page-header__container">
         <!------------------------- Навигация --------------------->
 
-        <nav class="site-nav menu">
+        <nav class="site-nav">
           <a class="logo logo--header" href="./index.html" lang="en"
             >Web<span class="logo--color-dark">Studio</span></a
           >
 
           <button
-            class="menu__toggle js-open-menu"
+            class="mobile-menu__toggle js-open-menu"
             type="button"
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
             <svg
-              class="menu__icon"
+              class="mobile-menu__menu-icon"
               width="40"
               height="40"
               aria-label="Переключатель мобильного меню"
@@ -41,10 +41,50 @@
             </svg>
           </button>
 
-          <div class="menu__container js-menu-container" id="mobile-menu">
-            <button class="menu__toggle js-close-menu">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--current"
+                href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#footer">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+380961111111">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!---------------- Мобильное меню --------------------->
+
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+          <div class="mobile-menu__top">
+            <button class="mobile-menu__toggle js-close-menu">
               <svg
-                class="menu__icon"
+                class="mobile-menu__close-icon"
                 width="40"
                 height="40"
                 aria-label="Переключатель мобильного меню"
@@ -68,28 +108,49 @@
                 <a class="site-nav__link" href="#footer">Контакты</a>
               </li>
             </ul>
+          </div>
 
+          <div class="mobile-menu__bottom">
             <ul class="contacts">
               <li class="contacts__item">
+                <a class="contacts__link" href="tel:+380961111111">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="contacts__item">
                 <a class="contacts__link" href="mailto:info@devstudio.com">
-                  <svg class="contacts__icon" width="16" height="12">
-                    <use href="./images/icons.svg#icon-envelope"></use>
-                  </svg>
                   info@devstudio.com</a
                 >
               </li>
+            </ul>
 
-              <li class="contacts__item">
-                <a class="contacts__link" href="tel:+380961111111">
-                  <svg class="contacts__icon" width="10" height="16">
-                    <use href="./images/icons.svg#icon-smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
+            <ul class="mobile-social">
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="https://www.instagram.com/"
+                  >Instagram</a
+                >
+              </li>
+
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="https://twitter.com/"
+                  >Twitter</a
+                >
+              </li>
+
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="https://www.facebook.com/"
+                  >Facebook</a
+                >
+              </li>
+
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="https://www.linkedin.com/"
+                  >LinkedIn</a
                 >
               </li>
             </ul>
           </div>
-        </nav>
+        </div>
       </div>
     </header>
 
@@ -108,7 +169,7 @@
 
       <section class="section">
         <div class="container">
-          <h2 class="section__title visually-hidden-title">Особенности</h2>
+          <h2 class="section__title visually-hidden">Особенности</h2>
 
           <ul class="features">
             <li class="features__item">

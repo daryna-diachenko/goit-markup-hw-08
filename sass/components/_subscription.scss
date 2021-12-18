@@ -1,7 +1,7 @@
 .subscription__form {
   // text-align: center;
 
-  @media screen and (min-width: $large) {
+  @media screen and (min-width: 1200px) {
     @include centered-flex();
     // margin-left: 0;
     // margin-right: 0;
@@ -30,7 +30,7 @@
     color: $contacts-text-color;
   }
 
-  @media screen and (min-width: $large) {
+  @media screen and (min-width: 1200px) {
     width: 358px;
     margin-right: 12px;
     // margin-bottom: 0;

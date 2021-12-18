@@ -7,17 +7,16 @@
 .footer__container {
   text-align: center;
 
-  @media screen and (min-width: $large) {
+  @media screen and (min-width: 1200px) {
     @include centered-flex($align: baseline);
   }
 }
 
 .footer__contacts {
   margin-bottom: 60px;
-
   color: $primary-bg-white-color;
 
-  @media screen and (min-width: $large) {
+  @media screen and (min-width: 1200px) {
     margin-right: 70px;
     //  margin-bottom: 0;
   }
@@ -33,7 +32,7 @@
   display: block;
   margin-bottom: 8px;
 
-  @media screen and (min-width: $large) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
   }
 }
@@ -41,7 +40,7 @@
 .footer-contacts__item:not(:last-child) {
   margin-bottom: 8px;
 
-  @media screen and (min-width: $large) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
   }
 }
@@ -61,7 +60,7 @@
 .footer__social {
   margin-bottom: 60px;
 
-  @media screen and (min-width: $large) {
+  @media screen and (min-width: 1200px) {
     margin-right: auto;
     //  margin-bottom: 0;
   }
@@ -69,7 +68,6 @@
 
 .footer__text {
   margin-bottom: 20px;
-
   font-weight: $bold;
   text-transform: uppercase;
   color: $primary-bg-white-color;

@@ -18,7 +18,7 @@
   background-size: cover;
   background-position: center;
 
-  @media screen and (min-width: $large) {
+  @media screen and (min-width: 1200px) {
     min-height: 600px;
     padding: 200px 0;
   }
@@ -36,7 +36,7 @@
   text-transform: uppercase;
   color: $primary-bg-white-color;
 
-  @media screen and (min-width: $large) {
+  @media screen and (min-width: 1200px) {
     width: 696px;
     @include font($extra-bold, 44px, 1.36, 0.06em);
   }

@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media screen and (min-width: $large) {
+  @media screen and (min-width: 1200px) {
     margin-right: calc(-1 * #{$card-gap});
     margin-bottom: calc(-1 * #{$card-gap});
   }
@@ -12,7 +12,7 @@
   // width: 100%;
   margin-bottom: $card-gap;
 
-  @media screen and (min-width: $large) {
+  @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 3 - #{$card-gap});
     margin-right: $card-gap;
   }
@@ -71,6 +71,6 @@
 }
 
 .product__description {
-  @include font(null, 16px, 1.87, null);
+  @include font(null, 16px, 1.87);
   color: $primary-text-color;
 }

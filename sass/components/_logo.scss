@@ -1,7 +1,7 @@
 .logo {
   @extend %link;
   font-family: $font-family-logo;
-  @include font($bold, 24px, 1.17, null);
+  @include font($bold, 24px, 1.17);
   color: $accent-color;
 
   &--color-dark {
@@ -17,6 +17,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    @include font($bold, 26px, 1.9, null);
+    @include font($bold, 26px, 1.9);
   }
 }

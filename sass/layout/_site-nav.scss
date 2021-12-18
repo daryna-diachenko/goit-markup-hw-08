@@ -10,6 +10,9 @@
 }
 
 .site-nav__list {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: 93px;
@@ -19,11 +22,6 @@
 .site-nav__link {
   @extend %link;
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  @include font($semibold, null, null, 0.02em);
-  color: $nav-text-color;
   transition: color $timing $function;
 
   &:hover,
@@ -31,7 +29,14 @@
     color: $accent-color;
   }
 
-  @media screen and (min-width: $large) {
+  @media screen and (min-width: 768px) {
+    @include font($semibold, null, null, 0.02em);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $nav-text-color;
+  }
+
+  @media screen and (min-width: 1200px) {
     &--current {
       position: relative;
       color: $accent-color;
@@ -53,7 +58,7 @@
 }
 
 .site-nav__item:not(:last-child) {
-  @media screen and (min-width: $large) {
+  @media screen and (min-width: 1200px) {
     margin-right: 50px;
   }
 }

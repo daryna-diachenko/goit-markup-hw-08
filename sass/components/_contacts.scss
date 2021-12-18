@@ -1,4 +1,7 @@
 .contacts {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   // display: flex;
   // margin-left: auto;
 }
@@ -12,10 +15,7 @@
 
 .contacts__link {
   @extend %link;
-  // @include centered-flex();
-
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: block;
 
   @include font($semibold, null, null, 0.02em);
   color: $primary-text-color;
@@ -24,6 +24,12 @@
   &:hover,
   &:focus {
     color: $accent-color;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      @include centered-flex();
+    }
   }
 }
 
