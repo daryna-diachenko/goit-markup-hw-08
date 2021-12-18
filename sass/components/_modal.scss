@@ -170,10 +170,6 @@
   }
 }
 
-.form__checkbox {
-  @include visually-hidden;
-}
-
 .form__check-icon {
   display: inline-block;
   margin-right: 7px;

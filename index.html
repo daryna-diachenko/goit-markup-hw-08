@@ -43,11 +43,7 @@
 
           <ul class="site-nav__list">
             <li class="site-nav__item">
-              <a
-                class="site-nav__link site-nav__link--current"
-                href="./index.html"
-                >Студия</a
-              >
+              <a class="site-nav__link current" href="./index.html">Студия</a>
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
@@ -93,57 +89,69 @@
               </svg>
             </button>
 
-            <ul class="site-nav__list">
-              <li class="site-nav__item">
+            <ul class="mobile-menu__list site-nav__list">
+              <li class="mobile-menu__item site-nav__item">
                 <a
-                  class="site-nav__link site-nav__link--current"
+                  class="mobile-menu__link site-nav__link current"
                   href="./index.html"
                   >Студия</a
                 >
               </li>
-              <li class="site-nav__item">
-                <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+              <li class="mobile-menu__item site-nav__item">
+                <a
+                  class="mobile-menu__link site-nav__link"
+                  href="./portfolio.html"
+                  >Портфолио</a
+                >
               </li>
-              <li class="site-nav__item">
-                <a class="site-nav__link" href="#footer">Контакты</a>
+              <li class="mobile-menu__item site-nav__item">
+                <a class="mobile-menu__link site-nav__link" href="#footer"
+                  >Контакты</a
+                >
               </li>
             </ul>
           </div>
 
           <div class="mobile-menu__bottom">
-            <ul class="contacts">
-              <li class="contacts__item">
-                <a class="contacts__link" href="tel:+380961111111">
+            <ul class="mobile-menu__list contacts">
+              <li class="mobile-menu__item contacts__item">
+                <a
+                  class="mobile-menu__link contacts__link"
+                  href="tel:+380961111111"
+                >
                   +38 096 111 11 11</a
                 >
               </li>
-              <li class="contacts__item">
-                <a class="contacts__link" href="mailto:info@devstudio.com">
+              <li class="mobile-menu__item contacts__item">
+                <a
+                  class="mobile-menu__link contacts__link"
+                  href="mailto:info@devstudio.com"
+                >
                   info@devstudio.com</a
                 >
               </li>
             </ul>
 
-            <ul class="mobile-social">
-              <li class="mobile-social__item">
+            <ul class="mobile-social social">
+              <li class="mobile-social__item social__item">
                 <a class="mobile-social__link" href="https://www.instagram.com/"
                   >Instagram</a
                 >
               </li>
 
-              <li class="mobile-social__item">
+              <li class="mobile-social__item social__item">
                 <a class="mobile-social__link" href="https://twitter.com/"
                   >Twitter</a
                 >
               </li>
 
-              <li class="mobile-social__item">
+              <li class="mobile-social__item social__item">
                 <a class="mobile-social__link" href="https://www.facebook.com/"
                   >Facebook</a
                 >
               </li>
 
-              <li class="mobile-social__item">
+              <li class="mobile-social__item social__item">
                 <a class="mobile-social__link" href="https://www.linkedin.com/"
                   >LinkedIn</a
                 >
@@ -157,7 +165,7 @@
     <main>
       <!--------------------------- Герой --------------------------->
       <section class="hero">
-        <div class="container">
+        <div class="container hero__container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="btn hero__btn" type="button" data-modal-open>
             Заказать услугу
@@ -717,7 +725,7 @@
 
           <label class="form__field">
             <input
-              class="form__checkbox"
+              class="form__checkbox visually-hidden"
               type="checkbox"
               name="agreement"
               value="agree"

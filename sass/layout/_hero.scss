@@ -1,5 +1,6 @@
 .hero {
   max-width: 1600px;
+  width: 100%;
   min-height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -24,12 +25,14 @@
   }
 }
 
-.hero__title {
-  width: 360px;
+.hero__container {
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
+}
+.hero__title {
   margin-bottom: 30px;
-
   @include font($extra-bold, 26px, 1.62, 0.06em);
 
   text-align: center;

@@ -29,6 +29,12 @@
     color: $accent-color;
   }
 
+  @media screen and (max-width: 767px) {
+    &.current {
+      color: $accent-color;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     @include font($semibold, null, null, 0.02em);
     padding-top: 32px;
@@ -37,12 +43,11 @@
   }
 
   @media screen and (min-width: 1200px) {
-    &--current {
+    &.current {
       position: relative;
-      color: $accent-color;
     }
 
-    &--current::after {
+    &.current::after {
       position: absolute;
       bottom: -1px;
       left: 0;

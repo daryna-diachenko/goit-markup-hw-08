@@ -4,17 +4,6 @@
   align-items: $align;
 }
 
-@mixin visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 @mixin font($fw, $fs, $lh, $ls: 0.03em) {
   font-weight: $fw;
   font-size: $fs;
