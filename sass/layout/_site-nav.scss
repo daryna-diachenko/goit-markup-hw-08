@@ -1,11 +1,11 @@
 .site-nav {
   @include centered-flex($justify: space-between);
 
-  @media screen and (min-width: 480px) {
-  }
+  // @media screen and (min-width: 480px) {
+  // }
 
-  @media screen and (min-width: 1200px) {
-    @include centered-flex();
+  @media screen and (min-width: 768px) {
+    @include centered-flex($justify: flex-start);
   }
 }
 
@@ -13,9 +13,20 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 1200px) {
+
+  @media screen and (min-width: 768px) {
     display: flex;
+    margin-left: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-left: 93px;
+  }
+}
+
+.site-nav__item:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
   }
 }
 
@@ -24,15 +35,13 @@
   display: block;
   transition: color $timing $function;
 
-  &:hover,
-  &:focus {
+  &.current {
     color: $accent-color;
   }
 
-  @media screen and (max-width: 767px) {
-    &.current {
-      color: $accent-color;
-    }
+  &:hover,
+  &:focus {
+    color: $accent-color;
   }
 
   @media screen and (min-width: 768px) {
@@ -40,9 +49,7 @@
     padding-top: 32px;
     padding-bottom: 32px;
     color: $nav-text-color;
-  }
 
-  @media screen and (min-width: 1200px) {
     &.current {
       position: relative;
     }
@@ -60,10 +67,7 @@
       border-radius: 2px;
     }
   }
-}
 
-.site-nav__item:not(:last-child) {
   @media screen and (min-width: 1200px) {
-    margin-right: 50px;
   }
 }
