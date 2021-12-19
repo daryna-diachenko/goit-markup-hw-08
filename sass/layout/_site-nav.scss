@@ -1,11 +1,12 @@
 .site-nav {
   @include centered-flex($justify: space-between);
 
-  // @media screen and (min-width: 480px) {
-  // }
-
   @media screen and (min-width: 768px) {
     @include centered-flex($justify: flex-start);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include centered-flex();
   }
 }
 
@@ -66,8 +67,5 @@
       background-color: $accent-color;
       border-radius: 2px;
     }
-  }
-
-  @media screen and (min-width: 1200px) {
   }
 }

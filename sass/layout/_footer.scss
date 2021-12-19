@@ -13,12 +13,14 @@
 }
 
 .footer__contacts {
-  margin-bottom: 60px;
   color: $primary-bg-white-color;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
-    //  margin-bottom: 0;
   }
 }
 
@@ -58,11 +60,12 @@
 }
 
 .footer__social {
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-right: auto;
-    //  margin-bottom: 0;
   }
 }
 

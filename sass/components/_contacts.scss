@@ -8,6 +8,11 @@
     margin-left: auto;
     padding: 21px 0;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding: 0;
+  }
 }
 
 .contacts__item {
@@ -19,10 +24,11 @@
 }
 
 @media screen and (min-width: 1200px) {
-  // @include centered-flex();
+  @include centered-flex();
 
-  // &:not(:last-child) {
-  //   margin-right: 50px;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contacts__link {
@@ -39,11 +45,14 @@
   }
 
   @media screen and (min-width: 768px) {
+    // @include centered-flex();
     @include font($semibold, 12px, 1.17, 0.02em);
   }
 
   @media screen and (min-width: 1200px) {
-    // @include centered-flex();
+    @include centered-flex();
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 

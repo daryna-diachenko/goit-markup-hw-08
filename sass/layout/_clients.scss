@@ -1,32 +1,26 @@
 .clients {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
-  // margin-right: calc(-1 * #{$card-gap});
-  // margin-bottom: calc(-1 * #{$card-gap});
+  margin-right: calc(-1 * #{$card-gap});
+  margin-bottom: calc(-1 * #{$card-gap});
 }
 
 .clients__item {
   flex-basis: calc(100% / 2 - #{$card-gap});
-  margin: 15px;
+  margin-right: $card-gap;
+  margin-bottom: $card-gap;
 
-  // flex-basis: calc(100% / 2 - #{$card-gap});
-  // margin-right: $card-gap;
-  // margin-bottom: $card-gap;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - #{$card-gap});
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 6 - #{$card-gap});
+  }
 }
-
-// .clients {
-//   display: flex;
-//   margin-right: calc(-1 * #{$card-gap});
-// }
-
-// .clients__item {
-//   margin-right: $card-gap;
-// }
 
 .clients__link {
   @include centered-flex();
-  max-width: 210px;
 
   height: 92px;
   border: 1px solid $border-color;
@@ -39,6 +33,14 @@
   &:focus {
     border-color: $accent-color;
     color: $accent-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 210px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 226px;
   }
 
   @media screen and (min-width: 1200px) {
