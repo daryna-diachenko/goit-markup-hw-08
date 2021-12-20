@@ -26,11 +26,14 @@
 }
 
 .hero__container {
-  max-width: 360px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
+  @media screen and (max-width: 1199px) {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
 }
+
 .hero__title {
   margin-bottom: 30px;
   @include font($extra-bold, 26px, 1.62, 0.06em);
@@ -41,6 +44,8 @@
 
   @media screen and (min-width: 1200px) {
     width: 696px;
+    margin-left: auto;
+    margin-right: auto;
     @include font($extra-bold, 44px, 1.36, 0.06em);
   }
 }

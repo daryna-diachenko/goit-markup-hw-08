@@ -2,14 +2,6 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  &--no-top-padding {
-    padding-top: 0;
-
-    @media screen and (max-width: 1199px) {
-      display: none;
-    }
-  }
-
   &--another-bg-color {
     background-color: $secondary-bg-color;
   }
@@ -17,6 +9,13 @@
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+}
+.section--no-top-padding {
+  padding-top: 0;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
   }
 }
 

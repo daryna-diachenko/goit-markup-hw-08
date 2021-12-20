@@ -2,25 +2,31 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     margin-right: calc(-1 * #{$card-gap});
     margin-bottom: calc(-1 * #{$card-gap});
   }
 }
 
 .card-set__item {
-  // width: 100%;
+  width: 100%;
   margin-bottom: $card-gap;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - #{$card-gap});
+    margin-right: $card-gap;
+  }
 
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 3 - #{$card-gap});
-    margin-right: $card-gap;
   }
 }
 
 .product__link {
   @extend %link;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow $timing $function;
 
   &:hover,
@@ -45,7 +51,6 @@
   top: 0;
   left: 0;
   width: 100%;
-
   padding: 63px 24px;
   font-size: 18px;
   line-height: 1.56;
@@ -58,6 +63,7 @@
 }
 
 .product__meta {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
@@ -66,7 +72,6 @@
 .product__title {
   @extend %title;
   margin-bottom: 4px;
-
   @include font(null, 18px, 2, 0.06em);
 }
 

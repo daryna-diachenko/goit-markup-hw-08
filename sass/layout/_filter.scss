@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   margin-bottom: 40px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     @include centered-flex();
     margin-bottom: 50px;
   }

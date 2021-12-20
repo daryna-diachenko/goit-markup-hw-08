@@ -112,6 +112,11 @@
   @include font(null, 12px, 1.17, 0.01em);
   text-align: left;
   color: $primary-text-color;
+  @media screen and (max-width: 767px) {
+    .form__field:focus-within > & {
+      color: $accent-color;
+    }
+  }
 }
 
 .form__wrap {
@@ -190,7 +195,12 @@
 
 .form__text {
   @include font(null, 12px, 1.17);
+
   color: $primary-text-color;
+
+  @media screen and (max-width: 479px) {
+    font-size: 2.5vw;
+  }
 
   @media screen and (min-width: 1200px) {
     @include font(null, 14px, 1.71);
