@@ -21,11 +21,9 @@
 
 .clients__link {
   @include centered-flex();
-
   height: 92px;
   border: 1px solid $border-color;
   border-radius: 4px;
-
   color: $border-color;
   transition: color $timing $function, border-color $timing $function;
 

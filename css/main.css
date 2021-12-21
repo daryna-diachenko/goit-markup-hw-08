@@ -1,10 +1,10 @@
-.logo, .contacts__link, .site-nav__link, .mobile-social__link, .product__link, .address__link, .footer-contacts__link {
+.logo, .contacts__link, .site-nav__link, .mobile-social__link, .project__link, .address__link, .footer-contacts__link {
   font-style: normal;
   text-decoration: none;
   color: inherit;
 }
 
-.section__title, .modal__title, .features__title, .product__title {
+.section__title, .modal__title, .features__title, .project__title {
   font-weight: 700;
   color: #212121;
 }
@@ -1008,6 +1008,7 @@ body {
 }
 
 .site-nav {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1035,7 +1036,6 @@ body {
 
 @media screen and (min-width: 1200px) {
   .site-nav {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1244,23 +1244,48 @@ body {
 .hero {
   max-width: 1600px;
   width: 100%;
-  min-height: 400px;
+  max-height: 400px;
   margin-left: auto;
   margin-right: auto;
   padding: 118px 0;
   text-align: center;
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-image.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-image.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-image-mob-1x-min.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-image-mob-1x-min.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero-bg-image-mob-2x-min.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../images/hero-bg-image-tab-1x-min.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero-bg-image-tab-2x-min.jpg);
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
     min-height: 600px;
     padding: 200px 0;
+    background-image: url(../images/hero-bg-image-1x-min.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero-bg-image-2x-min.jpg);
   }
 }
 
@@ -1419,7 +1444,12 @@ body {
   }
 }
 
+img {
+  width: 100%;
+}
+
 .team__item {
+  max-width: 450px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1642,7 +1672,7 @@ body {
   }
 }
 
-.product__link {
+.project__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1657,27 +1687,28 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product__link:hover, .product__link:focus {
+.project__link:hover, .project__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.product__link:hover .product__text,
-.product__link:focus .product__text {
+.project__link:hover .project__text,
+.project__link:focus .project__text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.product__overlay {
+.project__overlay {
   position: relative;
   overflow: hidden;
 }
 
-.product__text {
+.project__text {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   padding: 63px 24px;
   font-size: 18px;
   line-height: 1.56;
@@ -1692,7 +1723,7 @@ body {
   overflow: auto;
 }
 
-.product__meta {
+.project__meta {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -1701,14 +1732,14 @@ body {
   border-top: none;
 }
 
-.product__title {
+.project__title {
   margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.product__description {
+.project__description {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;

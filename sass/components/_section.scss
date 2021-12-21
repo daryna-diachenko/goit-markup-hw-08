@@ -22,7 +22,6 @@
 .section__title {
   @extend %title;
   margin-bottom: 30px;
-
   @include font($bold, 28px, 1.18);
   text-align: center;
 

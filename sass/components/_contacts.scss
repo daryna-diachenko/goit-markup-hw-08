@@ -36,7 +36,6 @@
 .contacts__link {
   @extend %link;
   display: block;
-
   @include font($semibold, null, null, 0.02em);
   color: $primary-text-color;
   transition: color $timing $function;
@@ -47,7 +46,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    // @include centered-flex();
     @include font($semibold, 12px, 1.17, 0.02em);
   }
 
