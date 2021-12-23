@@ -6,7 +6,6 @@
   @media screen and (min-width: 768px) {
     display: block;
     margin-left: auto;
-    padding: 21px 0;
   }
 
   @media screen and (min-width: 1200px) {
@@ -16,8 +15,6 @@
 }
 
 .contacts__item {
-  @include centered-flex($justify: flex-start);
-
   @media screen and (max-width: 1199px) {
     &:not(:last-child) {
       margin-bottom: 10px;
@@ -35,7 +32,7 @@
 
 .contacts__link {
   @extend %link;
-  display: block;
+  @include centered-flex($justify: flex-start);
   @include font($semibold, null, null, 0.02em);
   color: $primary-text-color;
   transition: color $timing $function;

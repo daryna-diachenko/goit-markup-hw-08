@@ -12,6 +12,7 @@
   }
 
   @media screen and (max-width: 1199px) {
+    justify-content: space-around;
     text-align: center;
   }
 }
@@ -21,10 +22,6 @@
 
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
-  }
-
-  @media screen and (min-width: 767px) and (max-width: 1199px) {
-    width: 50%;
   }
 
   @media screen and (min-width: 1200px) {
@@ -76,10 +73,6 @@
 .footer__social {
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
-  }
-
-  @media screen and (min-width: 767px) and (max-width: 1199px) {
-    width: 50%;
   }
 
   @media screen and (min-width: 1200px) {

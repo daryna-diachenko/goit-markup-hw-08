@@ -10,11 +10,15 @@
 
 .project__item {
   width: 100%;
-  margin-bottom: $card-gap;
+
+  &:not(:last-child) {
+    margin-bottom: $card-gap;
+  }
 
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 2 - #{$card-gap});
     margin-right: $card-gap;
+    margin-bottom: $card-gap;
   }
 
   @media screen and (min-width: 1200px) {

@@ -24,22 +24,6 @@
             >Web<span class="logo--color-dark">Studio</span></a
           >
 
-          <button
-            class="mobile-menu__toggle js-open-menu"
-            type="button"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg
-              class="mobile-menu__menu-icon"
-              width="40"
-              height="40"
-              aria-label="Переключатель мобильного меню"
-            >
-              <use href="./images/icons.svg#icon-menu"></use>
-            </svg>
-          </button>
-
           <ul class="site-nav__list">
             <li class="site-nav__item">
               <a class="site-nav__link" href="./index.html">Студия</a>
@@ -83,6 +67,22 @@
           </ul>
         </nav>
 
+        <button
+          class="mobile-menu__toggle js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="mobile-menu__menu-icon"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
         <!---------------- Мобильное меню --------------------->
 
         <div class="mobile-menu js-menu-container" id="mobile-menu">
@@ -100,13 +100,15 @@
 
             <ul class="mobile-menu__list site-nav__list">
               <li class="mobile-menu__item site-nav__item">
-                <a class="mobile-menu__link site-nav__link" href="./index.html"
+                <a
+                  class="mobile-menu__link site-nav__link current"
+                  href="./index.html"
                   >Студия</a
                 >
               </li>
               <li class="mobile-menu__item site-nav__item">
                 <a
-                  class="mobile-menu__link site-nav__link current"
+                  class="mobile-menu__link site-nav__link"
                   href="./portfolio.html"
                   >Портфолио</a
                 >

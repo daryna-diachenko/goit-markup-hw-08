@@ -9,7 +9,6 @@
 
   background-color: $footer-bg-color;
   background-image: linear-gradient(
-      to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
@@ -25,7 +24,11 @@
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/hero-bg-image-tab-1x-min.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bg-image-tab-1x-min.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -36,7 +39,11 @@
   @media screen and (min-width: 1200px) {
     min-height: 600px;
     padding: 200px 0;
-    background-image: url(../images/hero-bg-image-1x-min.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bg-image-1x-min.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {

@@ -5,6 +5,10 @@
 
   @media screen and (min-width: 768px) {
     @include centered-flex();
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
 }
@@ -12,13 +16,15 @@
 .filter__item {
   &:not(:last-child) {
     margin-right: 8px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
   }
 }
 
 .filter__btn {
   min-width: 73px;
   height: 38px;
-  margin-bottom: 15px;
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
