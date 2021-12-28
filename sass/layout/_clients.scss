@@ -1,14 +1,12 @@
 .clients {
   display: flex;
   flex-wrap: wrap;
-  margin-right: calc(-1 * #{$card-gap});
-  margin-bottom: calc(-1 * #{$card-gap});
+  margin: -15px;
 }
 
 .clients__item {
   flex-basis: calc(100% / 2 - #{$card-gap});
-  margin-right: $card-gap;
-  margin-bottom: $card-gap;
+  margin: 15px;
 
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 3 - #{$card-gap});
